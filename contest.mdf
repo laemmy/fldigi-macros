@@ -1,0 +1,270 @@
+//fldigi macro definition file extended
+// This file defines the macro structure(s) for the digital modem program, fldigi
+// It also serves as a basis for any macros that are written by the user
+//
+// The top line of this file should always be the first line in every macro 
+// definition file (.mdf) for the fldigi program to recognize it as such.
+//
+
+//
+// Macro # 1
+/$ 0 CQ+@>|
+<TX>\n
+CQ TEST de <MYCALL> <MYCALL> CQ K\n
+<RX>\n
+<TIMER:15>
+
+//
+// Macro # 2
+/$ 1 Re+Ser @>|
+<TX>\n
+<CALL> <MYRST> <CNTR> <CNTR> <CNTR> <CALL> de <MYCALL> K\n
+<RX>
+
+//
+// Macro # 3
+/$ 2 QRZ? @>|
+<TX>\n
+QRZ? QRZ? de <MYCALL> K\n
+<RX>
+
+//
+// Macro # 4
+/$ 3 QSL/Lg/CQ
+<TX>\n
+QSL TU\n
+CQ TEST de <MYCALL> <MYCALL> k\n
+<RX><LOG><INCR>
+
+//
+// Macro # 5
+/$ 4 NR? @>|
+<TX>\n
+NR? NR? DE <MYCALL> K\n
+<RX>
+
+//
+// Macro # 6
+/$ 5 AGN @>|
+<TX>\n
+AGN AGN de <MYCALL> pse\n
+<RX>
+
+//
+// Macro # 7
+/$ 6 NIL @>|
+<TX>\n
+Sorry NIL NIL\n
+<RX>
+
+//
+// Macro # 8
+/$ 7 Incr +
+<INCR>
+
+//
+// Macro # 9
+/$ 8 Decr -
+<DECR>
+
+//
+// Macro # 10
+/$ 9 Ans @>|
+<TX>\n
+<MYCALL> <MYCALL>\n
+<RX>
+
+//
+// Macro # 11
+/$ 10 Nr ans @>|
+<RX><TX>\n
+<CALL> <MYRST> <CNTR> <CNTR> <CNTR> de <MYCALL> TU\n
+<RX>
+
+//
+// Macro # 12
+/$ 11 TU @>|
+<TX>\n
+QSL TU de <MYCALL>\n
+<RX>
+
+//
+// Macro # 13
+/$ 12 
+
+
+//
+// Macro # 14
+/$ 13 
+
+
+//
+// Macro # 15
+/$ 14 
+
+
+//
+// Macro # 16
+/$ 15 
+
+
+//
+// Macro # 17
+/$ 16 Repeat Nr.
+<TX>\n
+<CNTR> <CNTR> <CNTR> <CNTR> \n
+<RX>
+
+//
+// Macro # 18
+/$ 17 
+
+
+//
+// Macro # 19
+/$ 18 
+
+
+//
+// Macro # 20
+/$ 19 Log+
+<LOG><INCR>
+
+//
+// Macro # 21
+/$ 20 
+<LOG><INCR>
+
+//
+// Macro # 22
+/$ 21 
+
+
+//
+// Macro # 23
+/$ 22 
+
+
+//
+// Macro # 24
+/$ 23 
+
+
+//
+// Macro # 25
+/$ 24 
+
+
+//
+// Macro # 26
+/$ 25 
+
+
+//
+// Macro # 27
+/$ 26 
+
+
+//
+// Macro # 28
+/$ 27 
+
+
+//
+// Macro # 29
+/$ 28 
+
+
+//
+// Macro # 30
+/$ 29 
+
+
+//
+// Macro # 31
+/$ 30 
+
+
+//
+// Macro # 32
+/$ 31 
+
+
+//
+// Macro # 33
+/$ 32 
+
+
+//
+// Macro # 34
+/$ 33 
+
+
+//
+// Macro # 35
+/$ 34 
+
+
+//
+// Macro # 36
+/$ 35 
+
+
+//
+// Macro # 37
+/$ 36 
+
+
+//
+// Macro # 38
+/$ 37 
+
+
+//
+// Macro # 39
+/$ 38 
+
+
+//
+// Macro # 40
+/$ 39 
+
+
+//
+// Macro # 41
+/$ 40 
+
+
+//
+// Macro # 42
+/$ 41 
+
+
+//
+// Macro # 43
+/$ 42 
+
+
+//
+// Macro # 44
+/$ 43 
+
+
+//
+// Macro # 45
+/$ 44 
+
+
+//
+// Macro # 46
+/$ 45 
+
+
+//
+// Macro # 47
+/$ 46 
+
+
+//
+// Macro # 48
+/$ 47 
